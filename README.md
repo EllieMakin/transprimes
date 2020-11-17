@@ -8,7 +8,7 @@ A bash script that prints a trans flag made of binary-coded primes.
 
 Each digit represents an integer (starting from zero). If that number is a prime, the digit is a `1`, else the digit is a `0`.
 
-## Potential uses
+## Benefits
 
 - Pretty!
 - Pridey!
