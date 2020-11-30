@@ -6,7 +6,8 @@ n=$[n_rows * n_cols]
 n_stripe=$(($n_rows / 5 * $n_cols))
 
 digits=`printf "00" && printf "1%.0s" $(seq 1 1 $[n-2])}`
-for ((d=2; d<n; d++))
+max_d=$(echo "sqrt($n)" | bc)
+for ((d=2; d<max_d; d++))
 do
     if [[ ${digits:$d:1} -eq 1 ]]
     then
